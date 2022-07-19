@@ -19,9 +19,8 @@
   }
 
   document.querySelector('button').addEventListener('click', () => {
-    log(typeof webkit.messageHandlers.bridge.postMessage)
     // send messages to native
-    webkit.messageHandlers.bridge.postMessage('{"msg": "hello?","id": ' + Date.now() + '}')
+    webkit.messageHandlers.bridge.postMessage('test')
   })
 </script>
 </body>
