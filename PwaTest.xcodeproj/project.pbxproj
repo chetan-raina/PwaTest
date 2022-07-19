@@ -13,6 +13,10 @@
 		8C67F5BC2863884700FA2110 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67F5AA2863884400FA2110 /* ContentView.swift */; };
 		8C67F5BD2863884700FA2110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C67F5AB2863884700FA2110 /* Assets.xcassets */; };
 		8C67F5BE2863884700FA2110 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8C67F5AB2863884700FA2110 /* Assets.xcassets */; };
+		8C67F5C8286426F500FA2110 /* PwaWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67F5C7286426F500FA2110 /* PwaWebView.swift */; };
+		8C67F5C9286426F500FA2110 /* PwaWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67F5C7286426F500FA2110 /* PwaWebView.swift */; };
+		8CA6FD5E28866D3A008E3738 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6FD5D28866D3A008E3738 /* index.html */; };
+		8CA6FD5F28866D3A008E3738 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 8CA6FD5D28866D3A008E3738 /* index.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,8 @@
 		8C67F5B02863884700FA2110 /* PwaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PwaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C67F5B62863884700FA2110 /* PwaTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PwaTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8C67F5B82863884700FA2110 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		8C67F5C7286426F500FA2110 /* PwaWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PwaWebView.swift; sourceTree = "<group>"; };
+		8CA6FD5D28866D3A008E3738 /* index.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,8 @@
 				8C67F5A92863884400FA2110 /* PwaTestApp.swift */,
 				8C67F5AA2863884400FA2110 /* ContentView.swift */,
 				8C67F5AB2863884700FA2110 /* Assets.xcassets */,
+				8C67F5C7286426F500FA2110 /* PwaWebView.swift */,
+				8CA6FD5D28866D3A008E3738 /* index.html */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -158,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C67F5BD2863884700FA2110 /* Assets.xcassets in Resources */,
+				8CA6FD5E28866D3A008E3738 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -166,6 +175,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8C67F5BE2863884700FA2110 /* Assets.xcassets in Resources */,
+				8CA6FD5F28866D3A008E3738 /* index.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -176,6 +186,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C67F5C8286426F500FA2110 /* PwaWebView.swift in Sources */,
 				8C67F5BB2863884700FA2110 /* ContentView.swift in Sources */,
 				8C67F5B92863884700FA2110 /* PwaTestApp.swift in Sources */,
 			);
@@ -185,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8C67F5C9286426F500FA2110 /* PwaWebView.swift in Sources */,
 				8C67F5BC2863884700FA2110 /* ContentView.swift in Sources */,
 				8C67F5BA2863884700FA2110 /* PwaTestApp.swift in Sources */,
 			);
@@ -309,14 +321,19 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P533SF8M88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "";
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -338,14 +355,18 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = P533SF8M88;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
